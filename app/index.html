@@ -145,15 +145,15 @@
             </div>
         </div>
     </section>
-    <section class="section-index content"></section>
+
     <section class="section-index content ">
         <div class="section-index__head">
             <div class="section-index__title-block">
                 <h2 class="section-index__title">МЕБЕЛЬ ДЛЯ ДЕВОЧЕК</h2>
             </div>
             <div class="section-index__arrows">
-                <img class="section-index__arrow swiper-button-prev" src="img/arrow_left.png">
-                <img class="section-index__arrow swiper-button-next" src="img/arrow_right.png">
+                <img class="section-index__arrow swiper-button-prev" id="swiper-button-prev_1" src="img/arrow_left.png">
+                <img class="section-index__arrow swiper-button-next" id="swiper-button-next_1" src="img/arrow_right.png">
             </div>
         </div>
         <div class="section-index__underline"></div>
@@ -165,7 +165,7 @@
                 </div>
                 <img src="img/girls.png" class="main-img__big">
             </div>
-            <div class="section-index__slider slider-indx col-md-6 swiper-container">
+            <div class="section-index__slider slider-indx col-md-6 swiper-container" id="swiper-container_1">
                 <div class="flex-row swiper-wrapper">
                     <div class="slider-indx__slide col-md-6 swiper-slide">
                         <img src="img/slider_img.png" class="slider-indx__main-img">
@@ -258,13 +258,13 @@
                 <h2 class="section-index__title">ДЛЯ МАЛЬЧИКОВ</h2>
             </div>
             <div class="section-index__arrows">
-                <img class="section-index__arrow swiper-button-prev swiper-button-prev_1" src="img/arrow_left.png">
-                <img class="section-index__arrow swiper-button-next swiper-button-next_1" src="img/arrow_right.png">
+                <img class="section-index__arrow swiper-button-prev" id="swiper-button-prev_2" src="img/arrow_left.png">
+                <img class="section-index__arrow swiper-button-next" id="swiper-button-next_2"src="img/arrow_right.png">
             </div>
         </div>
         <div class="section-index__underline"></div>
         <div class="section-index__images row">
-            <div class="section-index__slider slider-indx col-md-6 swiper-container swiper-container_1">
+            <div class="section-index__slider slider-indx col-md-6 swiper-container" id="swiper-container_2">
                 <div class="flex-row swiper-wrapper">
                     <div class="slider-indx__slide col-md-6 swiper-slide">
                         <img src="img/for_boys_2.png" class="slider-indx__main-img">
@@ -364,8 +364,8 @@
                 <h2 class="section-index__title">МЕБЕЛЬ ДЛЯ ДЕВУШЕК</h2>
             </div>
             <div class="section-index__arrows">
-                <img class="section-index__arrow" src="img/arrow_left.png">
-                <img class="section-index__arrow" src="img/arrow_right.png">
+                <img class="section-index__arrow swiper-button-prev" id="swiper-button-prev_3" src="img/arrow_left.png">
+                <img class="section-index__arrow swiper-button-next" id="swiper-button-next_3" src="img/arrow_right.png">
             </div>
         </div>
         <div class="section-index__underline"></div>
@@ -377,9 +377,9 @@
                 </div>
                 <img src="img/girls.png" class="main-img__big">
             </div>
-            <div class="section-index__slider slider-indx col-md-6">
-                <div class="row">
-                    <div class="slider-indx__slide col-md-6">
+            <div class="section-index__slider slider-indx col-md-6 swiper-container" id="swiper-container_3">
+                <div class="flex-row swiper-wrapper">
+                    <div class="slider-indx__slide col-md-6 swiper-slide">
                         <img src="img/slider_img.png" class="slider-indx__main-img">
                         <div class="slider-indx__title">Рабочий стул</div>
                         <div class="slider-indx__underline"></div>
@@ -399,7 +399,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slider-indx__slide col-md-6">
+                    <div class="slider-indx__slide col-md-6 swiper-slide">
                         <img src="img/slider_img-1.png" class="slider-indx__main-img">
                         <div class="slider-indx__title">Комод в спальню</div>
                         <div class="slider-indx__underline"></div>
@@ -419,26 +419,66 @@
                             </div>
                         </div>
                     </div>
+                    <div class="slider-indx__slide col-md-6 swiper-slide">
+                        <img src="img/slider_img-1.png" class="slider-indx__main-img">
+                        <div class="slider-indx__title">Комод в спальню</div>
+                        <div class="slider-indx__underline"></div>
+                        <div class="slider-indx__price-list">
+                            <div class="slider-indx__info">
+                                <span class="slider-indx__price">25 000 Р.</span>
+                                <div class="slider-indx__rate">
+                                    <img src="img/star.png">
+                                    <img src="img/star.png">
+                                    <img src="img/star.png">
+                                    <img src="img/star.png">
+                                    <img src="img/star.png">
+                                </div>
+                            </div>
+                            <div class="slider-indx__add-to-cart">
+                                <div class="btn-add-to-cart">В КОРЗИНУ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-indx__slide col-md-6 swiper-slide">
+                        <img src="img/slider_img.png" class="slider-indx__main-img">
+                        <div class="slider-indx__title">Рабочий стул</div>
+                        <div class="slider-indx__underline"></div>
+                        <div class="slider-indx__price-list">
+                            <div class="slider-indx__info">
+                                <span class="slider-indx__price">5 000 Р.</span>
+                                <div class="slider-indx__rate">
+                                    <img src="img/star.png">
+                                    <img src="img/star.png">
+                                    <img src="img/star.png">
+                                    <img src="img/star.png">
+                                    <img src="img/star.png">
+                                </div>
+                            </div>
+                            <div class="slider-indx__add-to-cart">
+                                <div class="btn-add-to-cart">В КОРЗИНУ</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         </div>
     </section>
-    <section class="section-index content ">
+    <section class="section-index content">
         <div class="section-index__head">
             <div class="section-index__title-block">
                 <h2 class="section-index__title">ДЛЯ ПАРНЕЙ</h2>
             </div>
             <div class="section-index__arrows">
-                <img class="section-index__arrow" src="img/arrow_left.png">
-                <img class="section-index__arrow" src="img/arrow_right.png">
+                <img class="section-index__arrow swiper-button-prev" id="swiper-button-prev_4" src="img/arrow_left.png">
+                <img class="section-index__arrow swiper-button-next" id="swiper-button-next_4"src="img/arrow_right.png">
             </div>
         </div>
         <div class="section-index__underline"></div>
         <div class="section-index__images row">
-            <div class="section-index__slider slider-indx col-md-6">
-                <div class="row">
-                    <div class="slider-indx__slide col-md-6">
+            <div class="section-index__slider slider-indx col-md-6 swiper-container" id="swiper-container_4">
+                <div class="flex-row swiper-wrapper">
+                    <div class="slider-indx__slide col-md-6 swiper-slide">
                         <img src="img/for_boys_2.png" class="slider-indx__main-img">
                         <div class="slider-indx__title">Рабочий стул</div>
                         <div class="slider-indx__underline"></div>
@@ -458,7 +498,47 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slider-indx__slide col-md-6">
+                    <div class="slider-indx__slide col-md-6 swiper-slide">
+                        <img src="img/for_boys_1.png" class="slider-indx__main-img">
+                        <div class="slider-indx__title">Комод в спальню</div>
+                        <div class="slider-indx__underline"></div>
+                        <div class="slider-indx__price-list">
+                            <div class="slider-indx__info">
+                                <span class="slider-indx__price">25 000 Р.</span>
+                                <div class="slider-indx__rate">
+                                    <img src="img/star.png">
+                                    <img src="img/star.png">
+                                    <img src="img/star.png">
+                                    <img src="img/star.png">
+                                    <img src="img/star.png">
+                                </div>
+                            </div>
+                            <div class="slider-indx__add-to-cart">
+                                <div class="btn-add-to-cart">В КОРЗИНУ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-indx__slide col-md-6 swiper-slide">
+                        <img src="img/for_boys_1.png" class="slider-indx__main-img">
+                        <div class="slider-indx__title">Комод в спальню</div>
+                        <div class="slider-indx__underline"></div>
+                        <div class="slider-indx__price-list">
+                            <div class="slider-indx__info">
+                                <span class="slider-indx__price">25 000 Р.</span>
+                                <div class="slider-indx__rate">
+                                    <img src="img/star.png">
+                                    <img src="img/star.png">
+                                    <img src="img/star.png">
+                                    <img src="img/star.png">
+                                    <img src="img/star.png">
+                                </div>
+                            </div>
+                            <div class="slider-indx__add-to-cart">
+                                <div class="btn-add-to-cart">В КОРЗИНУ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-indx__slide col-md-6 swiper-slide">
                         <img src="img/for_boys_1.png" class="slider-indx__main-img">
                         <div class="slider-indx__title">Комод в спальню</div>
                         <div class="slider-indx__underline"></div>
@@ -490,6 +570,8 @@
         </div>
         </div>
     </section>
+
+
     <section class="section-index content ">
         <div class="section-index__head">
             <div class="section-index__title-block">
@@ -564,24 +646,7 @@
 
         </div>
     </footer>
-    <script type="text/javascript">
-        var swiper = new Swiper('.swiper-container', {
-          slidesPerView: 2,
-          direction: 'horizontal',
-          navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-            },
-        });
-        var swiper_1 = new Swiper('.swiper-container_1', {
-          slidesPerView: 2,
-          direction: 'horizontal',
-          navigation: {
-              nextEl: '.swiper-button-next_1',
-              prevEl: '.swiper-button-prev_1',
-            },
-        });
-    </script>
+    <script src="js/main.js" type="text/javascript"></script>
 </body>
 
 </html>
