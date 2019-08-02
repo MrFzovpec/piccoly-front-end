@@ -34,8 +34,8 @@ var swiper_4 = new Swiper('#big_swiper', {
   slidesPerView: 1,
   direction: 'horizontal',
   navigation: {
-      nextEl: '#swiper-button-next_1',
-      prevEl: '#swiper-button-prev_1',
+      nextEl: '#big_swipper_next',
+      prevEl: '#big_swipper_prev',
     },
 });
 var swiper_5 = new Swiper('#slider_3', {
