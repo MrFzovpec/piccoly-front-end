@@ -127,26 +127,43 @@
             </div>
         </nav>
     </header>
-    <section class="first-index">
-        <div class="first-index__slide">
+    <section class="first-index swiper-container" id = "big_swiper">
+        <div class="swiper-wrapper">
             <div class="first-index__arrow first-index__left">
                 <img src="img/first_arrow_left.png">
             </div>
-            <div class="first-index__content-block">
-                <div class="first-index__text indx-first-text">
-                    <div class="indx-first-text__brown indx-first-text__simple">КОЛЛЕКЦИЯ 2019</div>
-                    <div class="indx-first-text__big indx-first-text__simple">СКИДКА 50%</div>
-                    <div class="indx-first-text__small indx-first-text__simple">НА СПАЛЬНИ</div>
-                    <div class="btn-opacity">ПОДРОБНЕЕ</div>
+            <div class="first-index__arrow first-index__right">
+                 <img src="img/first_index_right.png">
+            </div>
+            <div class="first-index__slide swiper-slide">
+                <div class="first-index__content-block swiper-slide">
+                    <div class="first-index__text indx-first-text">
+                        <div class="indx-first-text__brown indx-first-text__simple">КОЛЛЕКЦИЯ 2019</div>
+                        <div class="indx-first-text__big indx-first-text__simple">СКИДКА 50%</div>
+                        <div class="indx-first-text__small indx-first-text__simple">НА СПАЛЬНИ</div>
+                        <div class="btn-opacity">ПОДРОБНЕЕ</div>
+                    </div>
                 </div>
             </div>
-            <div class="first-index__arrow first-index__right">
-                <img src="img/first_index_right.png">
+            <div class="first-index__slide swiper-slide">
+                <div class="first-index__arrow first-index__left">
+                    <img src="img/first_arrow_left.png">
+                </div>
+                <div class="first-index__content-block swiper-slide">
+                    <div class="first-index__text indx-first-text">
+                        <div class="indx-first-text__brown indx-first-text__simple">КОЛЛЕКЦИЯ 2019</div>
+                        <div class="indx-first-text__big indx-first-text__simple">СКИДКА 50%</div>
+                        <div class="indx-first-text__small indx-first-text__simple">НА СПАЛЬНИ</div>
+                        <div class="btn-opacity">ПОДРОБНЕЕ</div>
+                    </div>
+                </div>
+                <div class="first-index__arrow first-index__right">
+                    <img src="img/first_index_right.png">
+                </div>
             </div>
         </div>
     </section>
-
-    <section class="section-index content ">
+    <section class="section-index content">
         <div class="section-index__head">
             <div class="section-index__title-block">
                 <h2 class="section-index__title">МЕБЕЛЬ ДЛЯ ДЕВОЧЕК</h2>
@@ -358,7 +375,7 @@
         </div>
         </div>
     </section>
-    <section class="section-index content ">
+    <section class="section-index content">
         <div class="section-index__head">
             <div class="section-index__title-block">
                 <h2 class="section-index__title">МЕБЕЛЬ ДЛЯ ДЕВУШЕК</h2>
@@ -570,30 +587,28 @@
         </div>
         </div>
     </section>
-
-
-    <section class="section-index content ">
+    <section class="section-index content">
         <div class="section-index__head">
             <div class="section-index__title-block">
                 <h2 class="section-index__title">ФАБРИКИ</h2>
             </div>
             <div class="section-index__arrows">
-                <img class="section-index__arrow" src="img/arrow_left.png">
-                <img class="section-index__arrow" src="img/arrow_right.png">
+                <img class="section-index__arrow section-index__arrow swiper-button-prev" src="img/arrow_left.png" id = "slider_3_prev">
+                <img class="section-index__arrow section-index__arrow swiper-button-next" src="img/arrow_right.png" id = "slider_3_next">
             </div>
         </div>
         <div class="section-index__underline"></div>
         <div class="categorical">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-xs-12">
+            <div class="container swiper-container" id = "slider_3">
+                <div class="flex-row swiper-wrapper">
+                    <div class="col-md-4 col-xs-12 swiper-slide">
                         <div class="row">
                             <img src="img/factory.png" alt="">
                             <span>фабрика москва</span>
                             <p>Специализируется на производстве мебели из экологически чистых. Специализируется на производстве мебели из экологически чистых</p>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xs-12">
+                    <div class="col-md-4 col-xs-12 swiper-slide">
                         <div class="row">
                             <img src="img/factory.png" alt="">
                             <span>фабрика москва</span>
@@ -601,7 +616,29 @@
 
                         </div>
                     </div>
-                    <div class="col-md-4 col-xs-12">
+                    <div class="col-md-4 col-xs-12 swiper-slide">
+                        <div class="row">
+                            <img src="img/factory.png" alt="">
+                            <span>фабрика москва</span>
+                            <p>Специализируется на производстве мебели из экологически чистых. Специализируется на производстве мебели из экологически чистых</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12 swiper-slide">
+                        <div class="row">
+                            <img src="img/factory.png" alt="">
+                            <span>фабрика москва</span>
+                            <p>Специализируется на производстве мебели из экологически чистых. Специализируется на производстве мебели из экологически чистых</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12 swiper-slide">
+                        <div class="row">
+                            <img src="img/factory.png" alt="">
+                            <span>фабрика москва</span>
+                            <p>Специализируется на производстве мебели из экологически чистых. Специализируется на производстве мебели из экологически чистых</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12 swiper-slide">
                         <div class="row">
                             <img src="img/factory.png" alt="">
                             <span>фабрика москва</span>
