@@ -1,4 +1,5 @@
 .open__mobile__menu
+    display: none
     position: absolute
     right: 25px
     top: 30px
@@ -15,21 +16,55 @@
         top: 30px
 
 @media screen and (max-width: 500px)
+    .open__mobile__menu
+        display: block
     .smm_container
 
         position: absolute
         .col-md-5, .smm
             display: none
         .logo
-            height: 90px
+            height: 80px
             top: 0
             left: 0 !important
         padding:
-            top: 1vh!important
-            left: 7vw!important
+            top: 10px!important
+            bottom: 10px!important
+            left: 10px!important
 
 
     nav
         height: 100px
         .menu__points, .menu__cart
             display: none
+    .section-index__main-img
+        margin-bottom: 5vh
+    .section-index__arrow
+        display: none
+    .section-index__underline
+        width: 40vw
+    .section-index__title-block
+        font-size: 20px
+    .section-index__slider
+        margin-bottom: 5vh
+    .main-img__uppertext
+        font-size: 32px
+
+    .big-btn
+        width: 190px
+        padding-top: 10px
+        padding-bottom: 10px
+        margin-top: 40px
+    .footer__description
+        width: 100%
+        text-align: justify
+        padding: 2%
+    .footer__contacts
+        width: 100vw
+        padding: 2%
+        p
+            text-align: center
+    .footer__subscribe form input
+        width: 55vw
+        height: 60px
+        padding-left: 10px
