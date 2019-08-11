@@ -18,6 +18,11 @@
 
 <body>
     <header>
+        <div class="mobile-menu">
+            <div class="mobile-menu__close">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAh1BMVEVHcEz///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9NFUgUAAAALHRSTlMAzMQBDgYFDQcExhEDswyRsrGvw8ISrgi2xa2kqQm8rKsLv6XJsM3Bu6a6tGsoXsAAAAC4SURBVDjL7ZPZEsIgDEVRC4Livi+17mv+//sMWCvOUMiTvvS+3cmZQDbGKv1NDfntlSrheuOu6/Vqq/wcgEvqA8DaR8oNAOx3bysytMemL2V6x9AoD4klmtrE/0nZwWDdkmJquHZZ2QUphkGOMd5HYJHwGMfYbG5yGryVhJvOB2AV45A8gX0+OsdXSkJC4tPUYvJGRtvzaXhkMI9i2MFRp1dnKfQNzdlLkteMvLhIXkinQD+uSr/QE67oGaawf4jbAAAAAElFTkSuQmCC">
+            </div>
+        </div>
         <div class="container smm_container">
             <div class="row">
                 <div class="col-md-3">
@@ -94,6 +99,9 @@
                             <img src="img/cart_white.png" width="auto" alt="">
                             <span>Корзина</span>
                         </div>
+                    </div>
+                    <div class="open__mobile__menu">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoAQMAAAC2MCouAAAABlBMVEVHcEz///+flKJDAAAAAXRSTlMAQObYZgAAABVJREFUCNdjYCAC/AcBLCSpYBCYAwAGdDvF2XDbTQAAAABJRU5ErkJggg==">
                     </div>
                 </div>
             </div>
@@ -297,6 +305,7 @@
                         <div class="slider-indx__title">Комод в спальню</div>
                         <div class="slider-indx__underline"></div>
                         <div class="slider-indx__price-list">
+                            
                             <div class="slider-indx__info">
                                 <span class="slider-indx__price">25 000 Р.</span>
                                 <div class="slider-indx__rate">
@@ -653,6 +662,14 @@
         </div>
     </footer>
     <script src="js/main.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $('.open__mobile__menu').click(function() {
+            $('.mobile-menu').toggle()
+        })
+        $('.mobile-menu__close').click(function() {
+            $('.mobile-menu').toggle()
+        })
+    </script>
 </body>
 
 </html>
