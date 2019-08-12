@@ -1,0 +1,57 @@
+.open__mobile__menu
+    display: none
+    position: absolute
+    right: 25px
+    top: 30px
+.mobile-menu
+    display: none
+    z-index: 99999
+    height: 105vh
+    width: 100vw
+    position: fixed
+    background: #5f5ca4
+    &__close
+        position: absolute
+        right: 25px
+        top: 30px
+    &__nav
+        position: absolute
+        width: 100%
+        left: 45%
+        top: 45%
+        transform: translate(-50%, -50%)
+        display: flex
+        align-items: center
+        justify-content: center
+        ul
+            list-style: none
+            li
+                padding: 3%
+                cursor: pointer
+                color: white
+                font-size: 25px
+                text-align: center
+                text-transform: uppercase
+                line-height: 2
+                font-family: "FuturaPT-Light"
+                &:hover
+                    text-decoration: underline
+
+    &__cart
+        background: rgb(206, 42, 110)
+        display: flex
+        justify-content: center
+        align-items: center
+        line-height: 2
+        .row
+            align-items: center
+            span
+                display: flex
+                align-items: center
+                font-size: 23px
+.modile-menu-smm
+    padding: 0 !important
+    img
+        background: white
+        border-radius: 50%
+        margin-top: 3vh
