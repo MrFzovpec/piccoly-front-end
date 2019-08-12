@@ -104,6 +104,9 @@ var swiper_6 = new Swiper('#swiper-container_5', {
 });
 var swiper_big = new Swiper('#big_swiper', {
     slidesPerView: 1,
+    autoplay:{
+        delay: 2000
+    },
     direction: 'horizontal',
     navigation: {
         nextEl: '#big_swiper_next',
