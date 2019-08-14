@@ -13,6 +13,7 @@
     <!--TODO: убрать все это -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
     <link rel="stylesheet" href="css/main.min.css">
     <title>Piccoly - Главная</title>
 </head>
@@ -259,31 +260,31 @@
                 <div class="order__title">ФИО</div>
                 <div class="order__input">
                     <form action="">
-                        <input type="text" name="">
+                        <input type="text" name="name">
                     </form>
                 </div>
-                <div class="order__title">ФИО</div>
+                <div class="order__title">ТЕЛЕФОН</div>
                 <div class="order__input">
                     <form action="">
-                        <input type="text" name="">
+                        <input type="text" name="phone">
                     </form>
                 </div>
-                <div class="order__title">ФИО</div>
+                <div class="order__title">EMAIL</div>
                 <div class="order__input">
                     <form action="">
-                        <input type="text" name="">
+                        <input type="email" name="email">
                     </form>
                 </div>
-                <div class="order__title">ФИО</div>
+                <div class="order__title">АДРЕС ДОСТАВКИ</div>
                 <div class="order__input">
                     <form action="">
-                        <input type="text" name="">
+                        <input type="text" name="adress">
                     </form>
                 </div>
-                <div class="order__title">ФИО</div>
+                <div class="order__title">КОММЕНТАРИЙ</div>
                 <div class="order__input" style="margin-bottom: 0px">
                     <form action="">
-                        <textarea style="height: 115px"></textarea>
+                        <textarea style="height: 115px" name="comment"></textarea>
                     </form>
                 </div>
             </div>
@@ -316,11 +317,11 @@
                         <div class="order__title">НОМЕР КАРТЫ</div>
                         <div class="order__input">
                             <form action="">
-                                <input type="text" name="">
+                                <input type="text" name="card_number">
                                 <img src="img/Visa-MasterCard-Maestro-Mir.png" alt="">
                             </form>
                         </div>
-                        <div class="order__title">НОМЕР КАРТЫ</div>
+                        <div class="order__title">ИМЯ ДЕРЖАТЕЛЯ КАРТЫ</div>
                         <div class="order__input">
                             <form action="">
                                 <input type="text" name="">
@@ -331,7 +332,7 @@
                                 <div class="order__title">СРОК ДЕЙСТВИЯ</div>
                                 <div class="order__input">
                                     <form action="">
-                                        <input type="text" name="">
+                                        <input type="text" name="validity">
                                     </form>
                                 </div>
                             </div>
@@ -339,7 +340,7 @@
                                 <div class="order__title">CVV 2</div>
                                 <div class="order__input">
                                     <form action="">
-                                        <input type="text" name="">
+                                        <input type="number" name="cvv">
                                     </form>
                                 </div>
                             </div>
@@ -400,6 +401,13 @@
             $('div#make_payment').toggle()
             $('button#continue_basket').toggle()
         })
+
+
+        $('input[name="phone"]').mask('+7(999)999-99-99')
+        $('input[name="card_number"]').mask('AAAA AAAA AAAA AAAA')
+        $('input[name="validity"]').mask('00/00')
+        $('input[name="cvv"]').mask('000')
+
     </script>
 </body>
 
