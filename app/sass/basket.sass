@@ -37,12 +37,14 @@
 		border-radius: 50%
 		margin-left: 7px
 	&__price-text
-		font-size: 28px
+		text-align: center
+		font-size: 24px
 	&__price
 		padding: 10px
 		border: 2px solid #c7b299
 		border-bottom: none
 		border-right: none
+		width: 70%
 	&__additional
 		margin-top: 30px
 		display: flex
@@ -53,6 +55,7 @@
 		text-align: center
 	&__quantity-text
 		margin: auto
+		margin-right: 8%
 		img
 			width: 13px
 			margin-left: 13px
@@ -95,3 +98,17 @@
 
 .section-basket__underline
 	width: 90%
+form.payment_type
+	margin-bottom: 3vh
+	.row
+		padding-left: 4%
+		label
+
+
+			font-size: 15px
+			text-transform: uppercase
+		input
+			margin-left: 1vw
+
+input[value="cashe"]:checked + .make_payment
+	display: none
