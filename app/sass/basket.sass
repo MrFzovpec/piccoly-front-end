@@ -11,11 +11,11 @@
 		font-size: 19px
 	&__commodity
 		width: 100%
-		max-width: 422px
+		max-width: 370px
 		padding: 20px
 		padding-bottom: 0px
 		padding-right: 0px
-		border: 2px solid #5f5ca4
+		border: 2px solid #c7b299
 		margin-right: 30px
 		margin-bottom: 2vh
 	&__upper
@@ -33,15 +33,15 @@
 	&__color
 		width: 33px
 		height: 33px
-		background-color: #5f5ca4
+		background-color: #c7b299
 		border-radius: 50%
 		margin-left: 7px
 	&__price-text
 		text-align: center
-		font-size: 20px
+		font-size: 24px
 	&__price
 		padding: 10px
-		border: 2px solid #5f5ca4
+		border: 2px solid #c7b299
 		border-bottom: none
 		border-right: none
 		width: 70%
@@ -50,7 +50,7 @@
 		display: flex
 	&__quantity
 		font-size: 22px
-		padding-top: 17px
+		padding-top: 11px
 		width: 184px
 		text-align: center
 	&__quantity-text
@@ -77,10 +77,9 @@
 			margin-top: 10px
 		input, textarea
 			width: 100%
-			padding-left: 2%
 			height: 45px
 			border-radius: none
-			border: 2px solid #5f5ca4
+			border: 2px solid #c7b299
 			background: #f3f3f3
 		textarea
 			height: 115px
@@ -102,19 +101,14 @@
 form.payment_type
 	margin-bottom: 3vh
 	.row
-
 		padding-left: 4%
 		label
 
 
-			font-size: 17px
+			font-size: 15px
 			text-transform: uppercase
 		input
 			margin-left: 1vw
-#make_payment
-	display: none
-#continue_basket
-	margin-left: 0
 
-.btn-add-to-cart
-	text-transform: uppercase
+input[value="cashe"]:checked + .make_payment
+	display: none
