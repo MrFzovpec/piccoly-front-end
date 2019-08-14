@@ -9,7 +9,7 @@ var swiper = new Swiper('#swiper-container_1', {
         prevEl: '#swiper-button-prev_1',
     },
     breakpoints: {
-        1023: {
+        1024: {
             slidesPerView: 1,
             slidesPerGroup: 1,
             spaceBetween: 45
@@ -22,7 +22,9 @@ var swiper = new Swiper('#swiper-container_1', {
     }
 });
 var swiper_1 = new Swiper('#swiper-container_2', {
-    slidesPerView: 2,
+    slidesPerView: 4,
+    slidesPerGroup: 2,
+    spaceBetween: 30,
     autoplay: {
         delay: 2000
     },
@@ -32,9 +34,9 @@ var swiper_1 = new Swiper('#swiper-container_2', {
         prevEl: '#swiper-button-prev_2',
     },
     breakpoints: {
-        1023: {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
+        1024: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
             spaceBetween: 45
         },
         640: {
@@ -45,8 +47,9 @@ var swiper_1 = new Swiper('#swiper-container_2', {
     }
 });
 var swiper_2 = new Swiper('#swiper-container_3', {
-    slidesPerView: 2,
+    slidesPerView: 4,
     slidesPerGroup: 2,
+    spaceBetween: 30,
     autoplay: {
         delay: 2000
     },
@@ -56,9 +59,9 @@ var swiper_2 = new Swiper('#swiper-container_3', {
         prevEl: '#swiper-button-prev_3',
     },
     breakpoints: {
-        1023: {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
+        1024: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
             spaceBetween: 45
         },
         640: {
@@ -69,7 +72,9 @@ var swiper_2 = new Swiper('#swiper-container_3', {
     }
 });
 var swiper_3 = new Swiper('#swiper-container_4', {
-    slidesPerView: 2,
+    slidesPerView: 4,
+    slidesPerGroup: 2,
+    spaceBetween: 30,
     autoplay: {
         delay: 2000
     },
@@ -79,7 +84,7 @@ var swiper_3 = new Swiper('#swiper-container_4', {
         prevEl: '#swiper-button-prev_4',
     },
     breakpoints: {
-        1023: {
+        1024: {
             slidesPerView: 1,
             slidesPerGroup: 1,
             spaceBetween: 45
@@ -103,15 +108,20 @@ var swiper_5 = new Swiper('#slider_3', {
         prevEl: '#slider_3_prev',
     },
     breakpoints: {
+        1024: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+        },
         640: {
             slidesPerView: 1,
             slidesPerGroup: 1,
-            spaceBetween: 45
+            spaceBetween: 40
         }
     }
 });
 var swiper_6 = new Swiper('#swiper-container_5', {
     slidesPerView: 4,
+    spaceBetween: 30,
     autoplay: {
         delay: 2000
     },
@@ -120,6 +130,19 @@ var swiper_6 = new Swiper('#swiper-container_5', {
         nextEl: '#swiper-button-next_5',
         prevEl: '#swiper-button-prev_5',
     },
+    breakpoints: {
+        1024: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 20
+        },
+
+        640: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 45
+        }
+    }
 
 });
 var swiper_big = new Swiper('#big_swiper', {
@@ -138,15 +161,19 @@ var swiper_big = new Swiper('#big_swiper', {
 //mobile
 $(document).ready(function() {
     $('.open__mobile__menu').click(function() {
-        $('.mobile-menu').toggle()
+        $('.mobile-menu').slideToggle()
     })
     $('.mobile-menu__close').click(function() {
-        $('.mobile-menu').toggle()
+        $('.mobile-menu').slideToggle()
     })
 
     $('.open-filters').click(function() {
-        $('.select-brown').toggle()
-        $('.open-filters').toggle()
+        $('.select-brown').slideToggle()
+        $('.open-filters').slideToggle()
+    })
+    var values = new Array()
+    $('.select-brown__category').click(function () {
+        $(this).toggleClass("chosen")
     })
 })
 
