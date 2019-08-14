@@ -149,3 +149,45 @@ $(document).ready(function() {
         $('.open-filters').toggle()
     })
 })
+
+var galleryThumbs = new Swiper('.gallery-thumbs', {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    loop: true,
+    freeMode: true,
+    loopedSlides: 5, //looped slides should be the same
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+        800: {
+            autoplay: {
+                delay: 4000,
+            }
+        },
+        640: {
+
+            slidesPerView: 2
+
+        }
+    },
+
+});
+var galleryTop = new Swiper('.gallery-top', {
+    spaceBetween: 10,
+    loop: true,
+    loopedSlides: 5, //looped slides should be the same
+    navigation: {
+        nextEl: '#swiper-button-next_gallery',
+        prevEl: '#swiper-button-prev_gallery',
+    },
+    thumbs: {
+        swiper: galleryThumbs,
+    },
+    breakpoints: {
+        800: {
+            autoplay: {
+                delay: 4000,
+            }
+        }
+    },
+});
