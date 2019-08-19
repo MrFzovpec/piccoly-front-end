@@ -24,7 +24,7 @@ var swiper = new Swiper('#swiper-container_1', {
 var swiper_1 = new Swiper('#swiper-container_2', {
     slidesPerView: 4,
     slidesPerGroup: 2,
-    spaceBetween: 30,
+    spaceBetween: 20,
     autoplay: {
         delay: 2000
     },
@@ -49,7 +49,7 @@ var swiper_1 = new Swiper('#swiper-container_2', {
 var swiper_2 = new Swiper('#swiper-container_3', {
     slidesPerView: 4,
     slidesPerGroup: 2,
-    spaceBetween: 30,
+    spaceBetween: 20,
     autoplay: {
         delay: 2000
     },
@@ -70,11 +70,12 @@ var swiper_2 = new Swiper('#swiper-container_3', {
             spaceBetween: 45
         }
     }
+
 });
 var swiper_3 = new Swiper('#swiper-container_4', {
     slidesPerView: 4,
     slidesPerGroup: 2,
-    spaceBetween: 30,
+    spaceBetween: 20,
     autoplay: {
         delay: 2000
     },
@@ -121,7 +122,7 @@ var swiper_5 = new Swiper('#slider_3', {
 });
 var swiper_6 = new Swiper('#swiper-container_5', {
     slidesPerView: 4,
-    spaceBetween: 30,
+    spaceBetween: 20,
     autoplay: {
         delay: 2000
     },
@@ -159,23 +160,46 @@ var swiper_big = new Swiper('#big_swiper', {
 
 
 //mobile
-$(document).ready(function() {
-    $('.open__mobile__menu').click(function() {
-        $('.mobile-menu').slideToggle()
-    })
-    $('.mobile-menu__close').click(function() {
-        $('.mobile-menu').slideToggle()
-    })
 
-    $('.open-filters').click(function() {
-        $('.select-brown').slideToggle()
-        $('.open-filters').slideToggle()
-    })
-    var values = new Array()
-    $('.select-brown__category').click(function () {
-        $(this).toggleClass("chosen")
-    })
+$('.open__mobile__menu').click(function() {
+    $('.mobile-menu').slideToggle()
 })
+$('.mobile-menu__close').click(function() {
+    $('.mobile-menu').slideToggle()
+})
+
+$('.open-filters').click(function() {
+    $('.select-brown').slideToggle()
+    $('.open-filters').slideToggle()
+})
+var values = new Array()
+$('.select-brown__category').click(function() {
+    $(this).toggleClass("chosen")
+})
+
+$('.open-hits').click(function() {
+    $('#hits').css({'visibility': 'visible', 'height': 'auto'})
+    $('.open-hits').toggle()
+    $('.close-hits').toggle()
+})
+$('.close-hits').click(function() {
+    $('#hits').css({'visibility': 'hidden', 'height': '0'})
+    $('.open-hits').toggle()
+    $('.close-hits').toggle()
+})
+
+$('.open-new').click(function() {
+    $('#new').css({'visibility': 'visible', 'height': 'auto'})
+    $('.open-new').toggle()
+    $('.close-new').toggle()
+})
+$('.close-new').click(function() {
+    $('#new').css({'visibility': 'hidden', 'height': '0'})
+    $('.open-new').toggle()
+    $('.close-new').toggle()
+})
+
+
 
 var galleryThumbs = new Swiper('.gallery-thumbs', {
     spaceBetween: 10,

@@ -1,5 +1,9 @@
 // TODO: small phones and tabs
 @media screen and (max-width: 1024px)
+    header .smm_container
+        min-height: 0
+        height: 0
+        padding: 0
     .footer__smm
         display: flex
         float: none
@@ -82,6 +86,11 @@
         justify-content: center
 
 @media screen and (max-width: 800px)
+    #hits, #new
+        visibility: hidden
+        height: 0
+    .open-hits, .open-new
+        display: block
     .section-index__arrows
         display: none
     .categorical
