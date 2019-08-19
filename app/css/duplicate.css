@@ -6,3 +6,9 @@
 .first-index{
     margin-bottom: 0;
 }
+
+
+.section-index{
+    max-width: none;
+    width: 100%;
+}
