@@ -48,26 +48,44 @@ a
         color: inherit
 
 .big-btn
+    cursor: pointer
     font-size: 18px
     color: white
     width: 216px
     text-align: center
     background-color: #ce2a6e
+    border: 1px solid #ce2a6e
+    text-shadow: none
     margin: auto
     padding-top: 24px
     padding-bottom: 24px
     margin-top: 40px
+    &:hover
+
+        background-color: white
+        color: #ce2a6e
+        transition: 0.3s
 
 .btn-add-to-cart
+    cursor: pointer
     text-transform: uppercase
     background-color: #ce2a6e
+    border: 1px solid #ce2a6e
     color: white
     font-size: 15px
     width: 100%
     padding-top: 10px
     padding-bottom: 10px
+    &:hover
+
+        background-color: white
+        color: #ce2a6e
+        transition: 0.3s
+
+
 
 .btn-opacity
+    cursor: pointer
     width: 140px
     text-align: center
     margin: auto
@@ -77,8 +95,13 @@ a
     padding-bottom: 10px
     border: solid 1px #fff
     margin-top: 40px
+    &:hover
+        color: #ce2a6e
+        text-shadow: none
+        background: white
 
 .sum-btn
+    cursor: pointer
     margin-top: 33px
     padding: 10px
     padding-bottom: 15px
@@ -88,5 +111,15 @@ a
     color: white
     font-size: 20px
     background-color: #605ca8
+.smm
+    display: flex
+    .row
+        align-items: center
+        p
+            margin-bottom: 0
+
+.select-brown__category
+    cursor: pointer
+
 
 @import "media"
