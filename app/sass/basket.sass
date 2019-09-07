@@ -123,10 +123,57 @@ form.payment_type
 	padding-top: 200px
 
 .empty_basket__btn
-	margin-top: 50px
+	margin-top: 20px
 	display: flex
 	align-items: center
 	justify-content: center
 
 .empty_basket__title
 	text-align: center
+
+a.check_status
+	color: #ce2a6e
+	cursor: pointer
+	&:hover
+		color: #ce2a6e
+		text-decoration: underline
+		cursor: pointer
+.check_status__content
+	margin-top: 10vh
+	margin-bottom: 10vh
+	.check_status__form
+
+		border: 2px solid #538ca9
+
+		margin-right: 2%
+		padding: 30px
+		margin-top: 10vh
+		display: flex
+		justify-content: center
+		text-align: center
+		align-items: center
+		form
+			display: flex
+			align-items: center
+
+
+		input[type="number"]
+			margin-left: 20px
+			padding-left: 10px
+			height: 45px
+			margin-right: 0
+
+		input.btn-add-to-cart
+			text-transform: uppercase
+			height: 45px
+			margin-top: 0
+			margin-left: 0
+			width: 100px
+	.deliver_table
+		margin-top: 5vh
+
+
+		.thead-dark th
+		    color: #fff
+		    background-color: #538ca9
+		    border-color: #538ca9
