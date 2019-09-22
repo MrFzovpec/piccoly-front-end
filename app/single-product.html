@@ -13,6 +13,7 @@
     <script type="text/javascript" src="js/jquery.mask.min.js"></script>
     <link rel="stylesheet" href="css/main.min.css">
     <title>Piccoly - Главная</title>
+
 </head>
 
 
@@ -67,7 +68,7 @@
             </div>
             <div class="row">
                 <div class="logo-big col-md-3">
-                    <a href="index.html"><img class="logo" src="img/logo.png"  alt=""></a>
+                    <a href="index.html"><img class="logo" src="img/logo.png" alt=""></a>
                 </div>
 
                 <div class="col-md-5">
@@ -90,7 +91,7 @@
                             <input type="submit" style="display: none" id="search__input" value="">
                             <label for="search__input" style="margin-bottom: 0" class="search__box">
 
-                                    <img src="img/search_icon.png">
+                                <img src="img/search_icon.png">
 
                             </label>
 
@@ -244,14 +245,15 @@
                         <span class="product__attr-bold">ЦВЕТА:</span>
                     </div>
                     <div class="product__colors">
-                        <input type="submit" id="red" style="display: none" value="red">
-                        <label for="#red">
+                        <label class="color_label active" for="red">
                             <div class="product__color"></div>
                         </label>
-                        <input type="submit"  id="green" style="display: none" value="green">
-                        <label for="#green">
+                        <input type="radio" id="red" style="display: none" value="red" name="color">
+
+                        <label class="color_label" for="green">
                             <div class="product__color"></div>
                         </label>
+                        <input type="radio" id="green" style="display: none" value="green" name="color">
 
                     </div>
                     <div class="product__line"></div>
@@ -302,6 +304,7 @@
 
         </div>
     </footer>
+    
     <script src="js/main.js" type="text/javascript"></script>
 
 </body>

@@ -242,3 +242,8 @@ var galleryTop = new Swiper('.gallery-top', {
         }
     },
 });
+
+$('.color_label').click(function() {
+    $('.active').removeClass('active')
+    $(this).addClass('active')
+})
